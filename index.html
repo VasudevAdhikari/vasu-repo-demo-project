@@ -1,13 +1,308 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <p>
-        Mammals are the highest group of animals belonging to the class Mammalia of the phylum Chordata. They include (1) the egg-laying forms, (2) the marsupials, which have pouches and (3) the placental mammals. Of these, the placental mammals are the majority. The general characters common to mammals are as follows.
-    </p>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Laundry</title>
+    <!-- Links -->
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@400;700&family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+    />
+    <!-- <style>
+      #goodbyeLaundry {
+        position: absolute;
+        margin-top: 3050px;
+        margin-left: 900px;
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+      }
+    </style> -->
+  </head>
+
+  <body style="background-color: ivory;">
+    <!-- <h2 id="goodbyeLaundry">Say Goodbye to Laundry Day</h2> -->
+    <header>
+      <nav>
+        <a href="#" class="logo"
+          ><i class="ri-home-heart-fill"></i><span>iLAUNDREE</span></a
+        >
+        <ul class="nav-bar">
+          <li><a href="#Home">Home</a></li>
+          <li><a href="#About">About Us</a></li>
+          <li><a href="#Services">Services</a></li>
+          <li><a href="#Contact">Contact Us</a></li>
+        </ul>
+        <a href="loginPage.html">
+          <div class="login-btn" onclick="toggleLoginForm()">
+            <i class="bx bx-log-in"></i>
+          </div>
+        </a>
+      </nav>
+      <!-- Login form -->
+      <div id="login-form" class="login-form">
+        <form>
+          <h2>Login</h2>
+          <input type="text" placeholder="Username" />
+          <input type="password" placeholder="Password" />
+          <button type="submit">Login</button>
+        </form>
+      </div>
+    </header>
+    <main id="Home">
+      <div class="main-content">
+        <div class="main-text">
+          <h1>Dry Cleaning & Laundry Delivery Services</h1>
+          <p>
+            "Explore our laundry haven! Forget laundry stress and enjoy
+            effortless freshness. Trust us to refresh your clothes perfectly.
+            We'll make laundry day easy for you with care and precision.
+            Experience ultimate convenience and revitalization. Let's transform
+            your laundry experience together!"
+          </p>
+          <div class="main-btn">
+            <button>Call US</button>
+          </div>
+        </div>
+        <div class="main-pic">
+          <img src="washing_Machine.png" alt="washing_Machine" />
+        </div>
+      </div>
+    </main>
+    <section id="About">
+      <div class="about-container">
+        <div class="about-image">
+          <img src="about_us.png" alt="" />
+        </div>
+        <div class="about-text">
+          <h1>Who Are We?</h1>
+          <p>
+            "We are expert laundry care professionals dedicated to providing
+            top-notch services. With precision and expertise, we ensure your
+            clothes receive the utmost care and attention they deserve."
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="Promo">
+      <div class="promo-header">
+        <h1 class="special-element">Laundry Revolution</h1>
+      </div>
+      <div class="promo-video">
+        <a href="promo-video.mp4" style="margin-left: 200px;"><video loop autoplay muted src="promo-video.mp4"></video></a>
+      </div>
+    </section>
+    <section id="Services">
+      <div class="services-container">
+        <div class="S-header">
+          <h1 class="special-element">Services</h1>
+        </div>
+        <div class="S-content">
+          <div class="S-card">
+            <img src="PickUp.svg" alt="Free Pick up" />
+            <h2>Free Pick up</h2>
+            <p>
+              "Enjoy complimentary pick-up service, adding convenience to your
+              laundry routine. Let us handle the hassle while you relax and
+              rejuvenate."
+            </p>
+          </div>
+
+          <div class="S-card">
+            <img src="Delivery.svg" alt="Free Delivery" />
+            <h2>Delivery</h2>
+            <p>
+              "Enjoy effortless delivery, We bring your clean clothes straight
+              to your door, making it convenient every step of the way."
+            </p>
+          </div>
+          <div class="S-card">
+            <img src="reply.svg" alt="24/7 Support" />
+            <h2>24/7 Support</h2>
+            <p>
+              "Count on our round-the-clock support. We're here for you anytime,
+              ensuring assistance whenever you need it, day or night."
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="Price">
+      <div class="price-container">
+        <div class="price-header">
+          <h1 class="special-element">Price List</h1>
+        </div>
+        <div class="price-list">
+          <table class="table table-bordered align-middle">
+            <thead class="table-success">
+              <tr>
+                <th scope="col">Type</th>
+                <th scope="col">Quantity</th>
+                <th scope="col">Price</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td rowspan="2">Machine Washing</td>
+                <td>Regular Colthes</td>
+                <td>200</td>
+              </tr>
+              <tr>
+                <td>Heavy Load</td>
+                <td>2500</td>
+              </tr>
+              <tr>
+                <td rowspan="2">Hand Washing</td>
+                <td>Regular Clothes</td>
+                <td>180</td>
+              </tr>
+              <tr>
+                <td>Heavy Load</td>
+                <td>2000</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+    <section id="Contact">
+      <div class="contact-header">
+        <h1 class="special-element">Contact Us</h1>
+      </div>
+      <div id="form-details">
+        <div class="form-container">
+          <form action="">
+            <span>LEAVE A MESSAGE</span>
+            <h2>We love to hear from you</h2>
+            <input type="text" placeholder="Your Name" />
+            <input type="text" placeholder="E-mail" />
+            <input type="text" placeholder="Subject" />
+            <textarea
+              name=""
+              id=""
+              cols="30"
+              rows="5"
+              placeholder="Your Message"
+            ></textarea>
+            <a href="mailto:yemanaung@ucsy.edu.mm"
+              ><button class="normal-button">Submit</button></a
+            >
+          </form>
+          <div class="people">
+            <div
+              class="people_header"
+              style="padding-bottom: 0; margin-left: 80px; margin-top: 20px"
+            >
+              <h2
+                id="goodbyeLaundry"
+                style="
+                  margin-bottom: 0;
+                  font-family: Impact, Haettenschweiler, Arial Narrow Bold,
+                    sans-serif;
+                "
+              >
+                Say Goodbye to Laundry Day
+              </h2>
+            </div>
+            <div style="margin-top: 0">
+              <img
+                src="https://th.bing.com/th/id/OIG2.djSX1VY.zCvejwqhhd1A?pid=ImgGn"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Newsletter Section -->
+    <section id="Newsletter">
+      <div id="newsletter-container">
+        <h2>Subscribe to Our Newsletter</h2>
+        <p>Stay updated with our latest services and promotions.</p>
+        <form action="#" id="newsletter-form">
+          <input
+            type="email"
+            class="form-control"
+            placeholder="Enter your email"
+            required
+          />
+          <button type="submit" class="btn btn-danger">Subscribe</button>
+        </form>
+      </div>
+      <div id="popup-message" class="popup-message"></div>
+    </section>
+    <!-- footer -->
+    <div class="foot">
+      <footer>
+        <div class="row">
+          <div class="col">
+            <a href="#" class="logo"
+              ><i class="ri-home-heart-fill"></i><span>iLAUNDREE</span></a
+            >
+            <p>
+              LAUNDREE simplifies laundry day with seamless scheduling, order tracking, and personalized preferences. Our dedicated team provides top-notch care for your garments, employing eco-friendly practices and state-of-the-art equipment. Experience convenience and quality like never before. Say goodbye to laundry day stress and hello to iLAUNDREE.
+            </p>
+          </div>
+          <div class="col">
+            <h3>
+              Office
+              <div class="underline">
+                <span></span>
+              </div>
+            </h3>
+            <p>ITPL Road</p>
+            <p>Whitefield, Yangon</p>
+            <p>BarNyar, 010101, Myanmar</p>
+            <p class="email-id">BarNyar@ucsy.edu.mm</p>
+            <h4>+69 - 0xxxxx89</h4>
+          </div>
+          <div class="col">
+            <h3>
+              NewsLetter
+              <div class="underline">
+                <span></span>
+              </div>
+            </h3>
+            <form>
+              <i class="ri-mail-line"></i>
+              <input type="email" placeholder="Enter your email id" required />
+              <button type="submit">
+                <i class="ri-arrow-right-s-line"></i>
+              </button>
+            </form>
+            <div class="social-icons">
+              <i class="ri-facebook-fill"></i>
+              <i class="ri-telegram-line"></i>
+              <i class="ri-github-fill"></i>
+              <i class="ri-instagram-line"></i>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <p class="copyright" style="margin-bottom: 0">
+          HypeBoy Team © 2024 - All Rights Reserved
+        </p>
+      </footer>
+    </div>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"
+  ></script>
+  <script src="js/app.js"></script>
 </html>
