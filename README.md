@@ -1,3 +1,4 @@
 # vasu-repo-demo-project
 This is my first Git Repository
-Author - Vasudev Adhikari
+<br>
+<b><i>Author - Vasudev Adhikari</b></i>
